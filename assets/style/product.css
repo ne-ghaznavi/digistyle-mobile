@@ -1,0 +1,542 @@
+.navigation {
+    position: static;
+}
+
+.nav-container {
+    padding: 10px 1rem;
+    border-bottom: 1px solid gainsboro;
+    position: static;
+    z-index: 900;
+    background-color: #fff;
+    width: 100%;
+}
+
+.subheader {
+    background-color: #fff;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem ;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.scrolled-subheader {
+    border-bottom: 1px solid gainsboro;
+}
+
+.subheader-right {
+    display: flex;
+}
+
+.subheader-right  span {
+    display: flex;
+    font-size: 34px;
+    color: gray;
+}
+
+.subheader-left {
+    display: flex;
+}
+
+.subheader-left span {
+    margin-left: .8rem;
+    color: gray;
+}
+
+.product-image-section {
+    padding-top: 20px;
+    border-bottom: 1px solid gainsboro;    
+}
+
+.product-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-item-container img {
+    width: 30%;
+}
+
+.product-title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.product-title span {
+    font-size: 14px;
+}
+
+.product-score {
+    display: flex;
+    align-items: center;
+}
+
+.product-score span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-score-usernum {
+    color: gray;
+    font-size: 12px;
+    margin: 0 .2rem;
+    margin-top: 6px;
+}
+.product-score span span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-score .score {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: .1rem;
+}
+
+.product-price-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: .5rem;
+}
+
+.product-price-offer {
+    background-color: #f04d7d;
+    font-size: 12px;
+    color: white;
+    padding: .2rem .5rem;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.old-price {
+    font-size: 13px;
+    color: gray;
+}
+
+.new-price {
+    color: black;
+}
+
+.product-size-section {
+    padding: .5rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.size-title {
+    padding: .5rem 0;
+    margin-bottom: .5rem;
+}
+
+.size-title span:first-of-type {
+    color: black;
+}
+
+.size-title span:last-of-type {
+    color: gray;
+    font-size: 12px;
+}
+
+.size-btn span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 2;
+    padding: 6px 8px 5px;
+    height: 32px;
+    min-width: 48px;
+    border-radius: 16px;
+    border: 1px solid #d9d9d9;
+}
+
+.product-description {
+    padding: .5rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.product-description h2 {
+    margin: .5rem 0;
+}
+
+.product-description ul {
+    margin-right: 1.5rem;
+    list-style-type: disc;
+    font-size: .75rem;
+    text-align: justify;
+}
+
+.product-description ul li {
+    margin-bottom: .5rem;
+}
+
+.product-specifications {
+}
+
+.product-specifications-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    font-size: .875rem;
+}
+
+.product-specifications-description {
+    display: nones;
+    position: relative;
+    border-top: 1px solid gainsboro;
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+
+.product-specifications-description h3 {
+    position: absolute;
+    top: -10px;
+    background-color: #fff;
+    padding: 0 .5rem;
+    font-size: 14px;
+    color: gray;
+}
+
+.product-specifications-description table {
+    width: 100%;
+    text-align: right;
+}
+
+.product-specifications-description table th{
+    padding:  .7rem .5rem;
+    width: 40%;
+    font-size: .75rem;
+}
+
+.product-specifications-description table tr:nth-of-type(odd) {
+    background-color: #fafafa;
+}
+
+.product-specifications-description table td{
+    padding:  .7rem .5rem;
+    font-size: .75rem;
+}
+
+.product-user-idea {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+
+.product-user-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+}
+
+.product-user-title span:first-of-type {
+    color: #000;
+    font-size: .9rem;
+}
+
+.product-user-title span:first-of-type span{ 
+    color: gray;
+    font-size: .8rem;
+}
+
+.product-user-title span:last-of-type a{ 
+    color: #41c1c6;
+    font-size: .9rem;
+}
+
+.product-user-idea-contect {
+    background-color: #fafafa;
+    padding: .5rem;
+}
+
+.product-user-idea-contect-icon {
+    display: flex;
+    align-items: center;
+}
+
+.product-user-idea section.extra-visit-slider li {
+    width: calc(100%/1.5) !important;
+}
+
+.product-user-idea-contect-icon i{
+    color: #41c1c6;
+}
+
+.product-user-idea-contect-icon span{
+    color: #41c1c6;
+    font-size: .7rem;
+    margin: 0 .2rem;
+}
+
+.product-user-idea-contect-text {
+    height: 75px;
+    color: #000;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.product-user-idea-contect-time {
+    font-size: 10px;
+    color: gray;
+}
+
+.product-user-idea-contect-time span:first-of-type{
+    font-size: 10px;
+    color: gray;
+    border-left: 1px solid gray;
+    padding: 0 .3rem;
+}
+
+.product-user-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.product-user-footer-title {
+    font-size: .75rem;
+}
+
+.product-user-footer-btn {
+    padding: .5rem 1rem;
+    border: 1px solid #41c1c6;
+    color: #41c1c6;
+    font-size: 14px;
+}
+
+.product-policy {
+    padding: 1rem 0;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 50px;
+}
+
+.product-add-cart {
+    background-color: #f04d7d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.product-add-cart  i {
+    margin: 0 .5rem;
+}
+
+.product-added {
+    background-color: #16d39a;
+}
+
+
+/* add comment style */
+
+.add-comment-header {
+    display: flex;
+    box-shadow: 0 0 5px gray;
+    align-items: flex-start;
+    padding: .7rem;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.add-comment-header a {
+    display: flex;
+    align-items: center;
+}
+
+.add-comment-header a span {
+    color: gray;
+}
+
+.add-comment-body {
+    margin-top: 50px;
+}
+
+.total-score {
+    border-bottom: 1px solid gainsboro;
+    padding: 1rem .5rem;
+}
+
+.add-comment-text {
+    padding: 1rem .5rem;
+}
+
+.add-comment-text p {
+    font-size: 14PX;  
+    margin-bottom: 1rem;  
+}
+
+.add-comment-title,
+.add-comment-plus,
+.add-comment-minus,
+.add-comment-content {
+    position: relative;
+    border-bottom: 1px solid gainsboro;
+    margin: 2.5rem 0;
+    padding: 0 .5rem;
+}
+
+.add-comment-title span,
+.add-comment-plus span,
+.add-comment-minus span,
+.add-comment-content span {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 16px;
+    transition: .4s;
+    color: gray;
+}
+
+.add-comment-title input,
+.add-comment-plus input,
+.add-comment-minus input,
+.add-comment-content textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.add-comment-content textarea {
+    width: 100%;
+    /* height: fit-content; */
+    resize: none;
+}
+
+.add-comment-body input:focus ~ .add-comment-title-lable ,
+.add-comment-body input:not(:focus):valid ~ .add-comment-title-lable{
+    top: -18px;
+	font-size: 12px;
+    color: black;
+}
+
+.add-comment-body textarea:focus ~ .add-comment-title-lable ,
+.add-comment-body textarea:not(:focus):valid ~ .add-comment-title-lable{
+    top: -18px;
+	font-size: 12px;
+    color: black;
+}
+
+.add-comment-btn {
+    background-color: #41c1c6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.add-comment-btn span:first-of-type {
+    margin-left: .5rem;
+}
+
+/* all product style start */
+.produc-wrapper {
+    text-align: center;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.produc-wrapper .product-item {
+    display: inline-flex;
+    width: 45%;
+    flex-direction: column;
+    padding: .5rem 0;
+    box-shadow: 0 0 1px gray;
+    margin: .3rem;
+}
+
+.product-item-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-item-image span {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 0 .4rem;
+    background-color: #f04d7d;
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-item-image img {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.prodcut-item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: gray;
+    padding: .5rem;
+}
+
+.prodcut-item-title span:last-of-type {
+    background-color: #16d39a;
+    padding: .1rem;
+    color: #fff;
+}
+
+.prodcut-item-description {
+    text-align: right;
+    padding: .5rem;
+    font-size: 12px;
+    color: #000;
+}
+
+.prodcut-item-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    font-size: 14px;
+}
+
+.prodcut-item-price del {
+    flex: 1;
+    text-align: right;
+    color: gray;
+}
+
+.prodcut-item-price span {
+    color: #f04d7d;
+}
+
+/* all product style end */

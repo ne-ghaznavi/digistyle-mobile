@@ -1,0 +1,13 @@
+.header {
+    background-color: aqua;
+    display: flex;
+    align-items: flex-start;
+}
+
+header div {
+    width: fit-content;
+}
+
+.header-shopping-cart img {
+    width: 100px;
+}

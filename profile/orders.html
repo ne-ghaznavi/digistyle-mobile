@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروفایل</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href='../assets/style/bootstrap.rtl.css'>
+    <link rel="stylesheet" href='../assets/style/bootstrap-reboot.css'>
+    <link rel="stylesheet" href='../assets/style/style.css'>
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="../assets/style/reset.css">
+
+    <!-- fontawesome CSS -->
+    <link href="../assets/style/all.css" rel="stylesheet">
+
+    
+    <!-- font-icon CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../assets/style/style2.css">
+    <link rel="stylesheet" href="../assets/style/profile.css">
+    
+    <link rel="icon" href="../assets/image/Favicon.png">
+    
+    
+    <link rel="stylesheet" href="../assets/style/persian-datepicker.css">
+    
+
+
+    
+</head>
+<body>
+
+    <header class="user-info-header">
+        <a href="profile.html"><span class="material-icons">chevron_right</span></a>
+        <span>پیگیری سفارش</span>
+    </header>
+
+    <div class="order-body">
+        <div class="order-body-tab">
+            <div class="order-tab-proccess order-tab-active">
+                <span>در حال پردازش</span>
+                <span>0</span>
+            </div>
+            <div class="order-tab-deliver">
+                <span>تحویل شده</span>
+                <span>0</span>
+            </div>
+            <div class="order-tab-cancel">
+                <span>لغو شده</span>
+                <span>0</span>
+            </div>
+        </div>
+
+        <div class="order-body-detail">
+            <div class="order-body-detail-proccess order-body-detail-active">
+                <img src="../assets/image/shopping-cart.png">
+                <span>شما هیچ سفارش درحال پردازشی ندارید</span>
+            </div>
+            
+            <div class="order-body-detail-order">
+                <img src="../assets/image/shopping-cart.png">
+                <span>شما هیچ سفارش تحویل شده‌ای ندارید</span>
+            </div>
+            
+            <div class="order-body-detail-cancel">
+                <img src="../assets/image/shopping-cart.png">
+                <span>شما هیچ سفارش بغو شده‌ای ندارید</span>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <!-- jquery script -->
+    <script src="../assets/script/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="../assets/script/popper.min.js"></script>
+    <script src="../assets/script/bootstrap.js"></script>
+    
+    <!-- custom script -->
+    <script src="../assets/script/script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.order-tab-proccess').click(function() {
+                $('.order-tab-proccess').addClass('order-tab-active');
+                $('.order-tab-deliver').removeClass('order-tab-active');
+                $('.order-tab-cancel').removeClass('order-tab-active');
+
+                $('.order-body-detail-proccess').addClass('order-body-detail-active');
+                $('.order-body-detail-order').removeClass('order-body-detail-active');
+                $('.order-body-detail-cancel').removeClass('order-body-detail-active');
+            });
+
+            $('.order-tab-deliver').click(function() {
+                $('.order-tab-deliver').addClass('order-tab-active');
+                $('.order-tab-proccess').removeClass('order-tab-active');
+                $('.order-tab-cancel').removeClass('order-tab-active');
+                
+                $('.order-body-detail-proccess').removeClass('order-body-detail-active');
+                $('.order-body-detail-order').addClass('order-body-detail-active');
+                $('.order-body-detail-cancel').removeClass('order-body-detail-active');
+            });
+
+            $('.order-tab-cancel').click(function() {
+                $('.order-tab-deliver').removeClass('order-tab-active');
+                $('.order-tab-proccess').removeClass('order-tab-active');
+                $('.order-tab-cancel').addClass('order-tab-active');
+
+                $('.order-body-detail-proccess').removeClass('order-body-detail-active');
+                $('.order-body-detail-order').removeClass('order-body-detail-active');
+                $('.order-body-detail-cancel').addClass('order-body-detail-active');
+            });
+        });
+    </script>
+
+</body>
+</html>
